@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h1 class="text-center">Welcome to {{ title }}</h1>
+
+  <nav class="navbar navbar-expand-md navbar-light navigation-clean-button">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex justify-content-center">
+          <li class="nav-item">
+            <button class="btn btn-link" (click)="getAllPosts()">All Posts</button>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-link" routerLink="create">Create a Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-link" routerLink="update">Update a Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-link" routerLink="delete">Delete a Post </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

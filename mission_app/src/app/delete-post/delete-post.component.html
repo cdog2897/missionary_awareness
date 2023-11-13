@@ -1,0 +1,10 @@
+<!-- delete-post.component.html -->
+
+<div>
+  <h2>Delete Post</h2>
+
+  <label for="postId">Enter Post ID to Delete:</label>
+  <input type="number" id="postId" name="postId" [(ngModel)]="postId" required>
+
+  <button (click)="deletePost()">Delete</button>
+</div>
